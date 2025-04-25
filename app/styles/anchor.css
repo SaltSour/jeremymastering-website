@@ -1,0 +1,59 @@
+/* Styles for animated anchor dots and underlines */
+.anchor-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  opacity: 0.7;
+  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+  background-color: var(--foreground);
+}
+
+.group:hover .anchor-dot {
+  transform: scale(1.5);
+  opacity: 1;
+  background-color: var(--accent);
+}
+
+/* Animated underline for links */
+.link-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--foreground);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.link-underline:hover::after {
+  transform: scaleX(1);
+}
+
+/* Subtle line animation */
+.line-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.line-animation::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.line-animation:hover::before {
+  width: 100%;
+}
