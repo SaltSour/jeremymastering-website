@@ -32,3 +32,35 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Large media files
+/public/projects/**/*.mp4
+/public/projects/**/*.mov
+/public/projects/**/*.webm
+/public/**/*.mp4
+/public/**/*.mov
+/public/**/*.webm
+/public/**/*.jpg
+/public/**/*.jpeg
+/public/**/*.png
+/public/**/*.gif
+/public/fonts/
+
+# Ignore large dependency metadata
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Editor directories and files
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
