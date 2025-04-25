@@ -6,6 +6,7 @@ export type Project = {
   year: string
   category: 'MIXING' | 'MASTERING' | 'SOUND DESIGN' | 'PRODUCTION'
   imageUrl: string
+  secondImageUrl?: string  // Optional second image
   description: string
   genre?: string
   youtubeUrl?: string
@@ -41,6 +42,7 @@ export const projects: Project[] = [
     year: "2024",
     category: "MASTERING",
     imageUrl: "/projects/priilick_11.jpg",
+    secondImageUrl: "/projects/priilick_11_back.jpg", // Example of second image
     description: "Album - Hip Hop",
     genre: "Hip Hop",
     youtubeUrl: "https://www.youtube.com/watch?v=LK0Wez06CJ8",
@@ -72,6 +74,7 @@ export const projects: Project[] = [
     year: "2025",
     category: "MASTERING",
     imageUrl: "/projects/sasso_malade.jpeg",
+    secondImageUrl: "/projects/sasso_malade_2.jpeg", // Example of second image
     description: "EP - Rap",
     genre: "Rap",
     youtubeUrl: "https://www.youtube.com/watch?v=e5wXRWin-to",
